@@ -11,3 +11,4 @@
 9. create pull request
 10. Review other people pull request
 11. after Approval Merge it
+12. Done with merge
