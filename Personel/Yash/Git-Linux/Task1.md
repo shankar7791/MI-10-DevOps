@@ -10,6 +10,7 @@ Process Types :
 
     Foreground Processes: They run on the screen and need input from the user. For example Office Programs
     Background Processes: They run in the background and usually do not need user input. For example Antivirus.
+    daemon : daemon is the system process that runs in background it has no connection to user or terminal
 
 Ctr c : used to kill current process
 

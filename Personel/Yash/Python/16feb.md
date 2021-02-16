@@ -22,5 +22,28 @@ python 3
 20
 >>> print(c)
 20
+
+typecasting 
+
+>>> x="10"
+>>> y=20
+>>> x+y
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can only concatenate str (not "int") to str
+>>> int(x)+y
+30
+
+Print as it is 
+
+>>> print("""yash
+... gsdhcb auysgc uyasgc iusahc iaushugc hb78
+... 78    hasc n jsajc
+... """)
+yash
+gsdhcb auysgc uyasgc iusahc iaushugc hb78
+78    hasc n jsajc
+
 >>> 
+
 
