@@ -1,4 +1,4 @@
-Process Defination : process is executed by one or many thread and it also contains program code.
+Process Defination : Process is an instance of an executing program
                   
 
 Process Proerties : processid(PID),userid,ppid,groupid
@@ -9,9 +9,9 @@ Process Types :
      Foreground process
      Demon process
 
-Ctr c : it is used to copy the file or data
+Ctr c : it is used to end the current process
 
-Ctr Z :use to terminate the process
+Ctr Z :use to suspend the current process.
 
 Ctrl D :used to stopped the writing files
 
