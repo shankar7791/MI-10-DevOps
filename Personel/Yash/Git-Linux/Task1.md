@@ -1,29 +1,32 @@
 Process Defination :
-
-
-Process Proerties :
-
+	An instance of a program is called a Process. In simple terms, any command that you give to your Linux machine starts a new process.  
+	
+	
+Process Properties :
+	Having multiple processes for the same program is possible. 
+	It has process id pid , parent process id ppid, userid
 
 Process Types :
 
-Ctr c :
+    Foreground Processes: They run on the screen and need input from the user. For example Office Programs
+    Background Processes: They run in the background and usually do not need user input. For example Antivirus.
 
-Ctr Z :
+Ctr c : used to kill current process
 
-Ctrl D :
+Ctr Z : suspends the current process ,come out of process but process remains still running in backgroud
 
+Ctrl D : Stops all existing process 
 
-Ps :
+Ps :Process Status This is similar to the "Task Manager" that pop-ups in a Windows Machine when we use Cntrl+Alt+Del. This command is similar to 'top' command but the information displayed is different.
 
-bg :
+bg :To send a process to the background
 
-fg :
+fg :To run a stopped process in the foreground
 
-clear :
+clear :Clear the terminal
 
+History: shows history of all commands used in terminal
 
-History:
+kill:This command terminates running processes on a Linux machine. 
 
-kill:
-
-Top:
+Top:tells the user about all the running processes on the Linux machine.

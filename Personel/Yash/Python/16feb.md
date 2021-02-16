@@ -5,7 +5,7 @@
 Check the version :
 python2 --version 
 python3 --version
-
+ install python  apt install python2/python3
 
 *Go to python shell 
 python 2
