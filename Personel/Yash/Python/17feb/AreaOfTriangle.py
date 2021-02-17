@@ -1,4 +1,4 @@
-#Prog 2 : Python Program to find Square root of number
+#Prog 3 : Python Program to calculate area of Triangle
 height=float(input("Enter the height of traingle : "))
 base=float(input("Enter the base of traingle : "))
 area=0.5*(height*base)
