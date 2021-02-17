@@ -8,6 +8,7 @@ It has process id ie. PID, parent process id ie.PPID, user id.
 Process Types :
 Background: In background or currently in process at background. 
 Foreground: process until we can not manually terminate the process it can not be terminated.
+Daemon.
 
 Ctr c :
 Terminate the process or we can say the the process from current directory.
