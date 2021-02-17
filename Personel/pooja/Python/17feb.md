@@ -36,7 +36,12 @@ y = temp
 print("the value of x after swapping: {}".format(x))
 print("the value of y after swapping: {}".format(y))
 
-5. python program to Convert Celcious to Farenheight
+5. python program to generate random number
+
+import random
+print(random.randint(0,9))
+
+6. python program to Convert Celcious to Farenheight
 
 celcius = float(input ("Enter temperature in celcius :"))
 
