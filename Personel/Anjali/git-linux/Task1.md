@@ -10,7 +10,7 @@ Process Types :
 
 	1)Foreground process
 	2)background process
-	
+
 Ctr c :
 	terminate the task running inside it.
 
@@ -18,7 +18,7 @@ Ctr Z :
 	 sends SIGTSTP to a foreground application, effectively putting it in the background, suspended. 
 
 Ctrl D :
-	
+
 	end terminal line input.
 
 Ps :
@@ -42,6 +42,8 @@ History:
 	show all history
 
 kill:
+
+
 	
 	 kill all the processes that you have the permission to kill.
 
