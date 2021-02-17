@@ -67,3 +67,19 @@ x = len(a)
 
 x = a[0]
 a[0] = "harshal"
+
+
+
+
+
+
+List :- A list is created by placing all the elements [].
+
+Tuple :- A tuple is created by all the elements ().
+
+Set :- A set is created by placing all the elements {}.
+
+Boolean :- The bool() function allow the evaluate any value True and False.
+
+Dictionaries :- used to store data vallue in key : value pairs.
+
