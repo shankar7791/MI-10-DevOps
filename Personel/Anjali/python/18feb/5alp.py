@@ -5,3 +5,4 @@ if val=='a' or val=='A' or val=='e' or val=='E' or val=='i' or val=='I' or val==
 
 else :
     print(f"{val} is constant")
+

@@ -6,3 +6,4 @@ elif val>='0' and val<='9':
     print(f"{val} is Digit")
 else :
     print(f"{val} is special character")
+

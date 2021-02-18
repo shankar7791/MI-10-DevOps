@@ -8,3 +8,4 @@ if num>0 :
 
 if num==0 :
     print(f"{num} Number is Zero")
+

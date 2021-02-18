@@ -7,3 +7,4 @@ elif num%11==0 :
 else :
     print(f"{num} is not divisible by 5 and 11")
 
+
