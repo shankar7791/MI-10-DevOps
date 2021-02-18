@@ -43,10 +43,14 @@ History:
 
 kill:
 
+
+	
 	 kill all the processes that you have the permission to kill.
 
 Top:
 
 	used to show the Linux processes.
+
+
 
 
