@@ -1,0 +1,5 @@
+#shorthand if..else
+
+num1=int(input("Enter the first number : "))
+num2=int(input("Enter the second number : "))
+print(f"{num1} is greater than {num2}") if(num1>num2) else print(f"{num2} is greater than {num1}")
