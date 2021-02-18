@@ -11,7 +11,7 @@ dictionary:
 it is unorderd collection of data.
 It is key-value pair in that we can assign the value to key ie 'name':value
 
-dictionary:
+set:
 In set the data will print unique value ie. no duplicate value,
 and in a inscresing format or in sorted form. 
 
