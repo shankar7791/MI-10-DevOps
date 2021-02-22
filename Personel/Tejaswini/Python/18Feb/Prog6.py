@@ -4,6 +4,6 @@ if inp>= "a" and inp <= "z" or inp >= "A" and inp<= "Z":
     print(f"The Given Input {inp} is an Alphabet")
 
 elif inp >= "0" and inp <= "9":
-    print("The Given Input {inp} is a Digit")
+    print(f"The Given Input {inp} is a Digit")
 else:
-    print("The Given Character Input {inp} is a Special Character")
+    print(f"The Given Character Input {inp} is a Special Character")
