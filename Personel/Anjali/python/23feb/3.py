@@ -8,3 +8,4 @@ while (num<=10):
         j=j+1
 
     break
+

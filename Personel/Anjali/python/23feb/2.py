@@ -8,3 +8,4 @@ while (num!=0):
     else :
         print("odd")
     break
+
