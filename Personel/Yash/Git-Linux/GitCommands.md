@@ -7,7 +7,7 @@
 4. git branch yash_work
 
 5. git checkout yash_work
-
+   git branch --list 
 6. git add myInfo.md
    git add GitCommands.md
 
