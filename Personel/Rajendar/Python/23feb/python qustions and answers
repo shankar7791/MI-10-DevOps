@@ -1,0 +1,335 @@
+ Questions
+
+Hex-clan
+
+1.1 What is a dynamically typed Language?
+ans = A language is dynamically-typed if the type of a variable is checked during run-time. Common examples of dynamically-typed languages includes JavaScript, Objective-C, PHP, Python, Ruby, Lisp, and Tcl.
+
+1.2 Can tuple be used as a dictionary key in python? (True or False)
+True
+
+1.3 Difference b/w list and tuple?
+
+SR.NO. 	LIST 	                                                                   TUPLE
+1 	Lists are mutable 	                                                           Tuple are immutable
+2 	Implication of iterations is Time-consuming 	                                    Implication of iterations is comparatively Faster
+3 	The list is better for performing operations, such as insertion and deletion.     Tuple data type is appropriate for accessing the elements
+4 	Lists consume more memory 	                                                   Tuple consume less memory as compared to the list
+5 	Lists have several built-in methods 	                                            Tuple does no have must built-in methods.
+6 	The unexpected changes and errors are more likely to occur 	                     In tuple, it is hard to take place.
+
+1.4 What is type casting in Python??
+Type casting is a method used for changing the variables/ values declared in a certain data type into a different data type in order to match for the operation required to be performed by the code snippet.
+
+1.5 What is the difference between list and tuples in Python?
+1.6 How to comment multiple lines in python?
+Python multi-line comment is a piece of text enclosed in a delimiter (""") on each end of the comment. Again there should be no white space between delimiter ("""). 
+
+1.7 What does len() do?
+The len() function returns the number of items in an object. When the object is a string, the len() function returns the number of characters in the string.
+
+1.8 What are the built-in types of python?
+Python has two main built-in numeric classes that implement the integer and floating point data types. 
+
+1.9 The condition x <= y <= z is allowed in Python?(True or False)
+False
+
+1.10 What Control statement does in Python Program?
+Control statements in python are used to control the order of execution of the program based on the values and logic. Python provides us with 3 types of Control Statements: Continue. Break. Pass.
+
+1.11 What signifies the end of a statement block or suite in Python?
+The code block in a for loop (in python) has no curly braces nor an "end" keyword indicating the point where the block terminates.
+
+1.12 Which data type is not a core data type in python?
+Class is a user defined data type
+
+1.13 Which function converts a string to a float in python?
+We can convert a string to float in Python using float() function. It's a built-in function to convert an object to floating point number.
+
+1.14 What data type is this? A = [1, 23, ‘hello’, 1]
+list
+1.15 What is the output of the following code? 5 // 2
+2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Crazy-devops
+2.1  What is  used  python language?
+2.2  What are the key features of python language ?
+    Easy to code: Python is a high-level programming language. ...
+    Free and Open Source: ...
+    Object-Oriented Language: ...
+    GUI Programming Support: ...
+    High-Level Language: ...
+    Extensible feature: ...
+    Python is Portable language: ...
+    Python is Integrated language:
+    
+2.3  which of these not a core data type
+       A.lists b.dictionary c.tuples d.clas
+       d.class
+       
+2.4  What function python has for taking user input
+Python has two functions designed for accepting data directly from the user: input() raw_input()
+
+2.5 what are the four main data types?
+List
+Tuple
+Set
+Dictionary
+
+2.6 what is type() in python?
+
+Python have a built-in method called as type which generally come in handy while figuring out the type of variable used in the program in the runtime. 
+
+2.7 what are local variables and global variables in python?
+Local variable is declared inside a function whereas Global variable is declared outside the function. Local variables are created when the function has started execution and is lost when the function terminates, on the other hand, Global variable is created as execution starts and is lost when the program ends.
+
+2.8 What do we use to define a block of code in Python language?
+Indentation
+
+2.9 What is the sequence of a string  ?
+2.10 what are the applications of python?
+    Web Development. ...
+    Game Development. ...
+    Scientific and Numeric Applications. ...
+    Artificial Intelligence and Machine Learning. ...
+    Software Development. ...
+    Enterprise-level/Business Applications. ...
+    Education programs and training courses. ...
+    Language Development.
+    
+2.11what are the advantages of python?
+1) Presence of third-party modules
+2) Extensive support libraries(NumPy for numerical calculations, Pandas for data analytics etc)
+3) Open source and community development
+4) Easy to learn
+5) User-friendly data structures
+6) High-level language
+7) Dynamically typed language(No need to mention data type based on value assigned, it takes data type)
+8) Object-oriented language
+9) Portable and Interactive
+10) Portable across Operating systems
+
+2.12 Which character is used in Python to make a single line comment?
+ In python we use # special character to start the comment.
+ 
+2.13 what is tuple in python?
+A tuple is a collection of objects which ordered and immutable. 
+
+2.14 select all the valid string creation in python
+Str1 = “str1” b.str1 = ‘str1’ c.str1 = “‘str1”’ d.str1 = str(“str1”)
+ALL
+
+2.15 What is short hand if in python? Give example. 
+2.16 what is SDLC?
+The software development lifecycle (SDLC) is a framework that development teams use to produce high-quality software in a systematic and cost-effective way. The SDLC methodology is used by both large and small software organizations.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Cloud-amigos
+
+3.1   What is the difference between list and tuples in Python?
+3.2   How python  is differ from other language?
+Python programs are generally expected to run slower than Java programs, but they also take much less time to develop. Python programs are typically 3-5 times shorter than equivalent Java programs. This difference can be attributed to Python's built-in high-level data types and its dynamic typing.
+
+3.3   Give types of if else  statement and explain it ?
+There are three forms of IF statements: IF-THEN , IF-THEN-ELSE , and IF-THEN-ELSIF 
+
+3.4.   what is a set?
+ Sets are used to store multiple items in a single variable. Set is one of 4 built-in data types in Python used to store collections of data, the other 3 are List, Tuple, and Dictionary, all with different qualities and usage. A set is a collection which is both unordered and unindexed.
+ 
+3.5    What are the key features of Python?  
+3.6   What is type conversion in Python? 
+3.7    Is indentation required in python? 
+Most of the programming languages like C, C++, and Java use braces { } to define a block of code. Python, however, uses indentation. ... The amount of indentation is up to you, but it must be consistent throughout that block.
+
+3.8   What are the built-in type does python provides?
+3.9   what is diff between if and shorthand if ?
+3.10  How to iterate list?
+
+
+Home » Ways to Iterate Through List in Python
+Ways to Iterate Through List in Python
+
+    Using Python range() method
+    List Comprehension
+    Using Python enumerate() method
+    By using a for Loop
+    By using a while Loop
+    Using Python NumPy module
+    Using lambda function
+    
+3.11  How to access list, tuple, dictionary, set?
+
+3.12  Explain Datatypes of python?
+
+3.13  how identify datatypes is string or integer in python?
+In Python, isnumeric() is a built-in method used for string handling. The issnumeric() methods returns “True” if all characters in the string are numeric characters, Otherwise, It returns “False”
+
+
+3.14  Explain in detail tuple ?with example?
+A tuple in Python is similar to a list. The difference between the two is that we cannot change the elements of a tuple once it is assigned whereas we can change the elements of a list.
+my_tuple = (1, 2, 3)
+print(my_tuple)
+output
+(1, 2, 3)
+3.15   what are types of variable in python? Explain it.
+Variables are nothing but reserved memory locations to store values. This means that when you create a variable you reserve some space in memory. types are the following - Python Integers and Floats · 2. Strings · 3. Boolean and None · 4. Lists · 5. Dictionaries · 6. Top 4 Other Data Types.
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4.Xanthrons
+
+4.1 What is indentation in python?
+ ans - Indentation refers to the spaces at the beginning of a code line. Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important. Python uses indentation to indicate a block of code.
+​
+4.2 What are diff datatypes in python?
+ ans - str
+Numeric Types:	int , float , complex
+Sequence Types:	list , tuple , range
+Mapping Type:	dict
+​
+4.3 What is meant by interpreted language?
+ ans - An interpreted language is a programming language whose implementations execute instructions directly and freely, without previously compiling a program into machine-language instructions. 2. In this language, once the program is compiled it is expressed in the instructions of the target machine.
+​
+4.4 What is diff between Compiled and interpreted language?
+ ans - Interpreted vs Compiled Programming Languages: What's the Difference? ... In a compiled language, the target machine directly translates the program. In an interpreted language, the source code is not directly translated by the target machine. Instead, a different program, aka the interpreter, reads and executes the code.
+​
+4.5 Which datatype is a mutable datatype?
+ ans - list, dict, set
+​
+4.6 Which operator used achieve square root?
+    A. ++    B. --     C. **     D. *
+ ans - C
+
+4.7 Which of the following is not a boolean expression?
+    A. True      B. 3 == 4     C. 3 + 4     D. 3 + 4 == 7
+ ans - C
+
+4.8 What is syntax of Shorthand if else?
+    A. True_statement if condition: else: False_condition
+    B. Flase_statement if condition: else False_condition
+    C. True_statement if condition else: False_condition
+    D. True_statement if condition: else False_condition
+ ans - D
+
+4.9 True is what type of variable?
+    A. float                B. string
+    C. boolean    D. integer
+ ans - bollean
+
+4.10.Given two variables, num1 and num2, which of the following would mean that both num1 and num2 are positive integers?
+    A. (num1 = num2)                            B. (num1 = num2) OR (num1 ≠ num2)
+    C. (num1 = num2) AND (num1<0)   D. (num1 = num2) AND (num2>0)
+ ans - D
+​
+4.11 What type of data is : arr=[(1,1),(2,2),(3,3)]?
+    A.Array of tuples        B. Tuples of Lists
+    C.List of Tuples        D. Invalid Type
+ ans - C
+​
+4.12 What is the output of the program : print ((1,2) + (3,4))?
+     A.(1,2),(3,4)            B. (4,6)
+     C.(1,2,3,4)            D. Invalid Syntax
+ ans - C
+4.13 Which of the following is used to create an empty set?
+    A.[]                B. {}
+    C.()                D. set()
+ ans - set()
+​
+4.14  Which of the following is used to know the datatype of variable?
+    A.datatype()            B.typeof()
+    C.type()            D.vartype()
+ ans  C
+
+4.15 What is the data type of : print(type(10))?
+ ans - integer
+
+
+
+
+
+
+
+
+
+
+Tech-army
+5.1
+
+
+
+
+
