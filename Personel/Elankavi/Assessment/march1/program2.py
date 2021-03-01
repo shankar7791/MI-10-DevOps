@@ -1,4 +1,4 @@
-#fibonacci series between 0 to 50
+#fibonacci series 
 t=int(input("How many digits of Fibonacci Series : "))
 n1,n2=0,1
 i=0
