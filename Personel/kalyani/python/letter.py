@@ -1,0 +1,1 @@
+# WAP function that accept a string and calculate the no of upper case letters and lower case letters.
