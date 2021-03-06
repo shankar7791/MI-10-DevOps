@@ -8,3 +8,12 @@ def factorial(x):
 
 f = 5
 print (" factorial of 5 is :" , f)
+
+
+# Alogrithm
+# create factorial function
+# conditional statement
+# print statment
+# else statment
+# take input from user
+# fuction calling

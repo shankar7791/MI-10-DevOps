@@ -11,3 +11,15 @@ if n < 0:
 print(" Enter  positive number:")
 else:
 print(" The sum is": recur_sum(n))
+
+
+# Alogrithm 
+# create recursive function
+# conditional statement
+# print statment
+# else statment
+# take input from user
+# conditional statement
+# print statment
+# else statment 
+# function calling
