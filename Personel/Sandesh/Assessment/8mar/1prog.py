@@ -1,4 +1,4 @@
-#Write a Python program to print alphabet pattern 'A'
+# Write a Python program to print alphabet pattern 'A'
 
 
 for i in range(0,7):
