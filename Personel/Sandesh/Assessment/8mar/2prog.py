@@ -1,4 +1,4 @@
-#Check if Binary representation is Palindrome in Python 
+# Check if Binary representation is Palindrome or not in Python 
 
 A = int(input("Enter a number : "))
 B = int(bin(A)[2:])
