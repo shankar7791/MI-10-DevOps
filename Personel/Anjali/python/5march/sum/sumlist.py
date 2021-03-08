@@ -25,3 +25,4 @@ print(f"sum of list element is{sum(list1)}")
 #put the element into the empty list using append
 #print list
 #print the sum of element
+
