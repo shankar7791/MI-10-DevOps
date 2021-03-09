@@ -1,0 +1,13 @@
+String = "Sandesh is a good boy" 
+print(String.endswith("boy"))
+print(String.count("o"))
+print(String.capitalize())
+print(String.upper())
+print(String.lower())
+print(String.find("is"))
+print(String.replace("is", "are"))
+print(String.rsplit())
+print(String.splitlines())
+print(String.title())
+print(String.rindex("is"))
+print(String.rpartition("good"))
