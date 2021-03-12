@@ -77,50 +77,48 @@ print("6.Check two strings are anagram or not")
 print("7.Exit")
 
 def operations() :
-    choice = input("Enter the choice(1/2/3/4/5/6/7): ")
-    if choice in ('1', '2', '3', '4', '5','6','7'):  
+    while True :    
+        choice = input("Enter the choice(1/2/3/4/5/6/7): ")
+        if choice in ('1', '2', '3', '4', '5','6','7'):
+            if choice == '1':
+                str = input("Enter the string : ")
+                print("The length of given string is : ",length(str))
 
-        if choice == '1':
-            str = input("Enter the string : ")
-            print("The length of given string is : ",length(str))
-
-        elif choice == '2':
-            str = input("Enter the string : ")
-            print("The reverse of given string is : ", reverse(str))
+            elif choice == '2':
+                str = input("Enter the string : ")
+                print("The reverse of given string is : ", reverse(str))
             
-        elif choice == '3':
-            str = input("Enter the string : ")
-            if palindrome(str) :
-                print("The given string is palindrome")
-            else :
-                print("The given string is not palindrome")
+            elif choice == '3':
+                str = input("Enter the string : ")
+                if palindrome(str) :
+                    print("The given string is palindrome")
+                else :
+                    print("The given string is not palindrome")
 
-        elif choice == '4':
-            str = input("Enter the string : ")
-            if symmetrical(str) :
-                print("The given string is symmetrical")
-            else :
-                print("The given string is not symmetrical")
+            elif choice == '4':
+                str = input("Enter the string : ")
+                if symmetrical(str) :
+                    print("The given string is symmetrical")
+                else :
+                    print("The given string is not symmetrical")
                 
-        elif choice == '5':
-            str = input("Enter the string : ")
-            print(pc(str))
+            elif choice == '5':
+                str = input("Enter the string : ")
+                print(pc(str))
 
-        elif choice == '6':
-            str1 = input("Enter the first string  : ")
-            str2 = input("Enter the second string : ")
-            if anagram(str1,str2):
-                print("The given strings are anagram")
-            else:
-                print("The given strings are not anagram")
+            elif choice == '6':
+                str1 = input("Enter the first string  : ")
+                str2 = input("Enter the second string : ")
+                if anagram(str1,str2):
+                    print("The given strings are anagram")
+                else:
+                    print("The given strings are not anagram")
 
-        elif choice == '7' :
-            print("Good Bye.....")
-    else:
-        print("Invalid Input")
-        operations()
+            elif choice == '7' :
+                print("Good Bye.....")
+                exit()
+        else:
+            print("Invalid Input")
+            operations()
         
-    while choice == 7 :
-        break
-
 operations()
