@@ -82,7 +82,7 @@ print("7.Exit")
 def menu() :
     while True:
         choice = input("Enter the choice(1/2/3/4/5/6/7): ")
-        if choice in ('1', '2', '3', '4', '5','6'):  
+        if choice in ('1', '2', '3', '4', '5','6','7'):  
 
             if choice == '1':
                 str = input("Enter the string : ")
@@ -117,7 +117,9 @@ def menu() :
                     print("The given strings are anagram")
                 else:
                     print("The given strings are not anagram")
+            elif choice == '7' :
+                exit()
         else:
             print("Invalid Input")
-        break
+    
 menu()
