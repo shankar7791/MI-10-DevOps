@@ -1,7 +1,6 @@
 def symmetry(a):
 
     n = len(a)
-    print(len(a))
     flag = 0
 
     # Check if the string's length
