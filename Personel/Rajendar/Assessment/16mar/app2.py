@@ -1,0 +1,11 @@
+# Check if a Substring is Present in a Given String
+
+str1 = input("Enter the string: ")
+
+substr1 = input("Enter the substring: ")
+
+if(substr1 in str1):
+    print("Substring is present")
+
+else:
+    print("Substring is not present")
