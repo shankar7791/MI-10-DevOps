@@ -119,6 +119,6 @@ def operations() :
                 exit()
         else:
             print("Invalid Input")
-            operations()
+            
         
 operations()
