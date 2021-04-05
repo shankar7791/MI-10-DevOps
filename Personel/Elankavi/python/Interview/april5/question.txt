@@ -1,0 +1,81 @@
+1)  What is the difference between list and tuples in python?
+  Ans :     List 					Tuples
+	List are mutable			Tuples are immutable
+	List are variable size 		Tuples are fixed size
+	
+2)  what is the key features of python?
+   Ans: 1- Easy to code
+   	2- GUI programming support
+   	3- Open and free source
+   	4- Object oriented language
+   	5- High level language
+   	6- Extensible features
+   	7- integrated language
+   	8- interpreted language
+   	9- Dynamically Typed language
+   	
+3)  What type of language is python ? programming or scripting ?
+   Ans : Python is scripting, general-purpose, high-level, and interpreted programming language.
+  
+ 4)  Python an interpreted language . Explain.
+   Ans : Python is an Interpreted Language because Python code is executed line by line at a time. like other languages C, C++, Java, etc. there is no need to compile python code this makes it easier  	to debug our code. The source code of python is converted into an immediate form called bytecode.
+ 
+ 5)  what is pep 8?
+   Ans : PEP-8 is a document that provides guidelines and best practices on how to write Python code.
+   	 The primary focus of PEP 8 is to improve the readability and consistency of Python code.
+   	 PEP stands for Python Enhancement Proposal.
+   	 
+ 6)  How is memory managed in python ?
+   Ans : Memory management is the functionality of an operating system which handles or manages primary memory and moves processes back and forth between main memory and disk during execution. Memory management keeps track of each and every memory location, regardless of either it is allocated to some process or it is free.
+   
+ 7)  what is namespace in python ?
+    Ans : A namespace is a system that has a unique name for each and every object in Python. An object might be a variable or a method.
+    
+8)  what is PYTHONPATH ?
+    Ans : PYTHONPATH is an environment variable which the user can set to add additional directories that the user wants Python to add to the sys. path directory list. ... So, when you import modules in your Python scripts, PYTHONPATH is also checked to see which directories might contain the imported module.
+    
+9)  what are python modules ? name some commonly used buuilt-innmodules in python?
+   Ans : OS Module.
+    	 Sys Module.
+    	 Math Module.
+    	 Statistics Module.
+    	 Collections Module.
+    	 Random Module.
+    	 
+10)  what are global and local variables in python ?
+   Ans : Local variable 					Global variable
+       1-Local variable declare inside the function           1- Global variable declare outside the function
+       2-Local variables are created when the function        2-Global variable is created as execution starts and is lost when the program ends
+       has started execution and is lost when the function
+       terminates, on the other hand
+       
+11)  is python  case sensitive ?
+  Ans : yes , python is case sensitive.
+  
+12)  What is type conversation in python ?
+  Ans : Python defines type conversion functions to directly convert one data type to another which is useful in day to day and competitive programming
+  
+13)  How to install python on windows and set path variable?
+   Ans :      PATH variable
+    Right-clicking This PC and going to Properties.
+    Clicking on the Advanced system settings in the menu on the left.
+    Clicking on the Environment Variables button o​n the bottom right.
+    In the System variables section, selecting the Path variable and clicking on Edit. ...
+    Clicking on New and entering Python's install directory.
+    
+14 ) is indentation required in python ?
+   Ans : To indicate a block of code in Python, you must indent each line of the block by the same amount. ... In most other programming languages, indentation is used only to help make the code look pretty. But in Python, it is required for indicating what block of code a statement belongs to.
+   
+15)  what is different between python arrays and list ?
+  Ans : 			List										Array
+	Can consist of elements belonging to different data types		Only consists of elements belonging to the same data type
+	No need to explicitly import a module for declaration		Need to explicitly import a module for declaration
+	Cannot directly handle arithmetic operations				Can directly handle arithmetic operations
+	Can be nested to contain different type of elements			Must contain either all nested elements of same size
+	Preferred for shorter sequence of data items				Preferred for longer sequence of data items
+	Greater flexibility allows easy modification				Less flexibility since addition, deletion has to be done element wise
+ 	(addition, deletion) of data						
+	The entire list can be printed without any explicit looping		A loop has to be formed to print or access the components of array
+	Consume larger memory for easy addition of elements			Comparatively more compact in memory size
+ 
+
