@@ -78,4 +78,30 @@
 	The entire list can be printed without any explicit looping		A loop has to be formed to print or access the components of array
 	Consume larger memory for easy addition of elements			Comparatively more compact in memory size
  
-
+16)  what are functions in python?
+   Ans : Function is a block of code which only runs when it is called.
+  	 You can pass data, known as parameters, into a function.
+  	 A function can return data as a result.
+   	
+17)  what is __init__?
+  Ans : "__init__" is a reseved method in python classes. It is called as a constructor in object oriented terminology. This method is called when an object is created from a class and it allows the 		class to initialize the attributes of the class.
+  
+18)  what is lambda function ?
+  Ans : A lambda function is a small anonymous function.
+	A lambda function can take any number of arguments, but can only have one expression.
+	
+19)  what is self in python ?
+  Ans : self represents the instance of the class. By using the “self” keyword we can access the attributes and methods of the class in python
+  
+20)  How does break , continue and pass work ?
+  Ans : The break keyword is used to break out a for loop, or a while loop
+        The continue statement is used to stop the current iteration of the loop, and continue with the next.
+        The pass statement is used as a placeholder for future code. When the pass statement is executed, nothing happens, but you avoid getting an error when empty code is not allowed. 
+        
+21)   what does [::-1} do ?
+   Ans :  It reverse a string.
+   
+22)   how can you randomize the items of a list in place in python ?
+   Ans : To randomly shuffle elements of lists ( list ), in Python, use the random module. random provides shuffle() that shuffles the original list in place, and sample() that returns a new list that 	  is randomly shuffled. sample() can also be used for strings and tuples.
+   
+23) 
