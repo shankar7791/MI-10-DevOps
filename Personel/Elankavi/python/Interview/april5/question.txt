@@ -102,6 +102,67 @@
    Ans :  It reverse a string.
    
 22)   how can you randomize the items of a list in place in python ?
-   Ans : To randomly shuffle elements of lists ( list ), in Python, use the random module. random provides shuffle() that shuffles the original list in place, and sample() that returns a new list that 	  is randomly shuffled. sample() can also be used for strings and tuples.
+   Ans : To randomly shuffle elements of lists ( list ), in Python, use the random module. random provides shuffle() that shuffles the original list in place, and sample() that returns a new list 	     that is randomly shuffled. sample() can also be used for strings and tuples.
    
-23) 
+23) what are python iterators ?
+   Ans : An iterator is an object that contains a countable number of values.
+	 An iterator is an object that can be iterated upon, meaning that you can traverse through all the values.
+	 Technically, in Python, an iterator is an object which implements the iterator protocol, which consist of the methods __iter__() and __next__().
+	 
+24)  How can you generate random numbers in python ?
+   Ans : Random integer values can be generated with the randint() function. This function takes two arguments: the start and the end of the range for the generated integer values. Random integers 	  	 are generated within and including the start and end of range values, specifically in the interval [start, end].
+   
+25)  What is the difference between range and xrange ?
+   Ans : They both provide a way to generate a list of integers for you to use, however you please. The only difference is that range returns a Python list object and xrange returns an xrange 	 object. ... It means that xrange doesn't actually generate a static list at run-time like range does
+   
+26) How to you write comments in python ?
+   Ans :  Comments in Python begin with a hash mark ( # ) and whitespace character and continue to the end of the line. Because comments do not execute, when you run a program you will not see any 		   indication of the comment there. Comments are in the source code for humans to read, not for computers to execute
+   
+27) what is pickling and unpickling ?
+   Ans :  The process to converts any kind of python objects (list, dict, etc.) into byte streams (0s and 1s) is called pickling or serialization or flattening or marshalling. 
+   	   We can converts the byte stream (generated through pickling) back into python objects by a process called as unpickling
+          
+28)  what are the generators in python ?
+   Ans :  Python generators are a simple way of creating iterators. All the work we mentioned above are automatically handled by generators in Python. Simply speaking, a generator is a function that 		  returns an object (iterator) which we can iterate over (one value at a time).
+   
+29)  How will you cappitalize the first letter of string ?
+  Ans : In Python, the capitalize() method returns a copy of the original string and converts the first character of the string to a capital (uppercase) letter while making all other characters in 		the string lowercase letters.
+  
+30)  How will you convert the string to all lowercase ?
+  Ans : LowerCase() method converts a string to lower case letters.
+  
+31)  How to command multiple lines in python ?
+  Ans : Unlike other programming languages Python doesn't support multi-line comment blocks out of the box.
+    	The recommended way to comment out multiple lines of code in Python is to use consecutive # single-line comments.
+    	
+32)  What are dostring in python ?
+  Ans :  Python docstrings are strings used right after the definition of a function, method, class, or module (like in Example 1). They are used to document our code. We can access these docstrings 		 using the __doc__ attribute.
+  
+33)  What is the purpose of is , not , in operators ?
+  Ans :  is   - is and is not are the identity operators in Python. They are used to check if two values (or variables) are located on the same part of the memory.
+  	 not  - An operation on logical values that changes true to false, and false to true.
+  	 in   - The 'in' operator is used to check if a value exists in a sequence or not.
+  	 
+34)  what is the usage of help() and dir() function in python ?
+  Ans : Help() and dir(), are the two functions that are reachable from the python interpreter. Both functions are utilized for observing the combine dump of build-in-function. These created 		functions in python are truly helpful for the efficient observation of the built-in system.
+  
+35)  whenever python exists , why isn't all the memory de-allocated ?
+  Ans : When Python exit, the object referenced from global namespaces of Python modules are not always deallocated. So, Python doesn't recognize and free circular memory references before using the 		garbage collector.
+  
+36)  what is the dictionary in python ?
+  Ans : Dictionaries are Python's implementation of a data structure that is more generally known as an associative array. A dictionary consists of a collection of key-value pairs. Each key-value 		 pair maps the key to its associated value.
+  
+37)  How can the ternary operator used in python ?
+  Ans : The ternary operator in python is used to return a value based on the result of a binary condition. ... It takes binary value(condition) as an input, so it looks similar to an “if-else” 	  condition block. However, it also returns a value so behaving similar to a function.
+  
+38)  what does this mean: *args , **kwargs ? and why would we use it ?
+  Ans : The special syntax *args in function definitions in python is used to pass a variable number of arguments to a function. It is used to pass a non-key worded, variable-length argument list.
+        **kwargs passes variable number of keyword arguments dictionary to function on which operation of a dictionary can be performed. 
+        *args and **kwargs make the function flexible.
+        
+39) what does len() do ?
+  Ans : The function will return the length of a given text string.
+  
+40)  Explain spilt() , sub() methods of "re"module in python ?
+  Ans :  sub() – finds all substrings where the regex pattern matches and then replace them with a different string
+	 split() – uses a regex pattern to “split” a given string into a list.
