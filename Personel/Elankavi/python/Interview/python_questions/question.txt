@@ -166,3 +166,62 @@
 40)  Explain spilt() , sub() methods of "re"module in python ?
   Ans :  sub() – finds all substrings where the regex pattern matches and then replace them with a different string
 	 split() – uses a regex pattern to “split” a given string into a list.
+	 
+41)  what are negative indexes and why are they used ?
+  Ans : The negative index is used to remove any new-line spaces from the string and allow the string to except the last character that is given as S[:-1]. The negative index is also used to show 		the index to represent the string in correct order.
+  
+42)  what are python packages ?
+  Ans :  A python package is a collection of modules. Modules that are related to each other are mainly put in the same package. When a module from an external package is required in a program, that 		 package can be imported and its modules can be put to use. Any Python file, whose name is the module's name property without the .
+  
+43)  How can files be deleted in python ?
+  Ans :     Open a Python File window. You see an editor in which you can type the example code.
+    	    Type the following code into the window — pressing Enter after each line: import os os. remove("ChangedFile. csv") print("File Removed!") ...
+   	    Choose Run→Run Module. The application displays the File Removed! message.
+   	    
+44) What are the built-in types of python ?
+  Ans : Python uses five numeric types: Booleans, integers, long integers, floating-point numbers, and complex numbers. Except for Booleans, all numeric objects are signed. All numeric types are 		immutable. Booleans are represented by two values: True and False.
+  
+45) What advantage do numpy arrays offer over (nested) python list ?
+  Ans :  Python's lists are efficient general-purpose containers. They support (fairly) efficient insertion, deletion, appending, and concatenation, and Python's list comprehensions make them easy 		 to construct and manipulate.
+  
+46) How to add values to a python array ?
+   Ans : If using List as an array, you can use its append(), insert(), and extend() functions. You can read more about it at Python add to List.
+    	 If using array module, you can use the concatenation using the + operator, append(), insert(), and extend() functions to add elements to the array.
+    	 If using NumPy arrays, use the append() and insert() function
+    	 
+47) How to remove values to a python array ?
+   Ans :  Use list. pop() to remove an element from a list by index. ...
+    	  Use the del keyword to remove an element from a list by index. Place the del keyword before the name of a list followed by the index of the element to remove in square brackets. ...
+    	  Use list. remove() to remove an element from a list by value. ...
+    	  Use np.
+    	  
+48) Does python have OOps concept ?
+  Ans :  Python is an object-oriented language since its beginning. ... In Python, we can easily create and use classes and objects. An object-oriented paradigm is to design the program using 	 classes and objects.
+  
+49) what is the difference between deep and shallow copy ?
+  Ans : A shallow copy constructs a new compound object and then (to the extent possible) inserts references into it to the objects found in the original. A deep copy constructs a new compound 	object and then, recursively, inserts copies into it of the objects found in the original.
+  
+50) How is multithreading achieved in python ?
+  Ans : Multithreading in Python can be achieved by importing the threading module. Now that you have threading module installed, let us move ahead and do Multithreading in Python
+  
+51) what is the process of compilation and linking in python ?
+  Ans : Compilation: The source code in python is saved as a . py file which is then compiled into a format known as byte code, byte code is then converted to machine code. This process is known as 		linking. 
+  
+ 52) What are python libraries ? name a few of them.
+   Ans : A Python library is a reusable chunk of code that you may want to include in your programs/ projects. Compared to languages like C++ or C, a Python libraries do not pertain to any specific 		context in Python. Here, a 'library' loosely describes a collection of core modules.
+             TensorFlow.
+    	Scikit-Learn.
+    	Numpy.
+    	Keras.
+    	PyTorch.
+    	LightGBM.
+    	Eli5.
+     	SciPy.
+     	
+53) what is spilt used for ?
+   Ans : The split() method is used to split a string into an array of substrings, and returns the new array. Tip: If an empty string ("") is used as the separator, the string is split between each 		 character. Note: The split() method does not change the original string.
+   
+54)  How to import modules in python ?
+   Ans :  import module_name. When import is used, it searches for the module initially in the local scope by calling __import__() function. ...
+    	  import module_name.member_name. ...
+    	  sfrom module_name import *
