@@ -201,78 +201,51 @@ Q50. How is Multithreading achieved in Python?
 	Multithreading in Python can be achieved by importing the threading module. Now that you have threading module installed, let us move ahead and do Multithreading in Python.
 
 Q51. What is the process of compilation and linking in python?
+	Compilation: The source code in python is saved as a . py file which is thencompiled into a format known as byte code, byte code is then converted to machine code. This process is known as linking.
 
 Q52. What are Python libraries? Name a few of them.
+	Tensor-flow,scikit-learn,Numpy,keras,pytorch,lightGBM
 
 Q53. What is split used for?
-
+	The split() method splits a string into a list. You can specify the separator, default separator is any whitespace
 Q54. How to import modules in python?
-
+	import module_name. When import is used, it searches for the module initially in the local scope by calling __import__() function.
 
 OOPS Python Interview Questions
 
 Q55. Explain Inheritance in Python with an example.
+	one class is derived from other class is known as inheritance.
+	class Animal:  
+    def speak(self):  
+        print("Animal Speaking")   
+class Dog(Animal):  
+    def bark(self):  
+        print("dog barking")  
+d = Dog()  
+d.bark()  
+d.speak()  
 
 Q56. How are classes created in Python?
+	Like function definitions begin with the def keyword in Python, class definitions begin with a class keyword. ... As soon as we define a class, a new class object is created with the same name. This class object allows us to access the different attributes as well as to instantiate new objects of that class.
 
 Q57. What is monkey patching in Python?
+	In Python, the term monkey patch only refers to dynamic modifications of a class or module at runtime, which means monkey patch is a piece of Python code that extends or modifies other code at runtime
 
 Q58. Does python support multiple inheritance?
+	When a child class inherits from multiple parent classes, it is called multiple inheritance. Unlike Java and like C++, Python supports multiple inheritance.
 
 Q59. What is Polymorphism in Python?
-
+	We can use the concept of polymorphism while creating class methods as Python allows different classes to have methods with the same name.
 Q60. Define encapsulation in Python?
+	Encapsulation is the packing of data and functions operating on that data into a single component and restricting the access to some of the object's components
 
 Q61. How do you do data abstraction in Python?
+	In Python, abstraction can be achieved by using abstract classes and interfaces. A class that consists of one or more abstract method is called the abstract class.
 
 Q62.Does python make use of access specifiers?
+	The access modifiers in Python are used to modify the default scope of variables. There are three types of access modifiers in Python: public, private, and protected. ... To create a protected variable, you need to prefix a single underscore with the variable name.
 
 Q64. What does an object() do?
-
-Programming Questions :
-
-Q65. Write a program in Python to execute the Bubble sort algorithm.
-
-Q66. Write a program in Python to produce Star triangle.
-
-Q67. Write a program to produce Fibonacci series in Python.
-
-Q68. Write a program in Python to check if a number is prime.
-
-Q69. Write a program in Python to check if a sequence is a Palindrome.
-
-Q70. Write a one-liner that will count the number of capital letters in a file. Your code should work even if the file is too big to fit in memory.
-
-Q71. Write a sorting algorithm for a numerical dataset in Python.
-
-Q72. Looking at the below code, write down the final values of A0, A1, …An.
-
-A0 = dict(zip(('a','b','c','d','e'),(1,2,3,4,5)))
-A1 = range(10)A2 = sorted([i for i in A1 if i in A0])
-A3 = sorted([A0[s] for s in A0])
-A4 = [i for i in A1 if i in A3]
-A5 = {i:i*i for i in A1}
-A6 = [[i,i*i] for i in A1]
-print(A0,A1,A2,A3,A4,A5,A6)
-
-Python Libraries – Python Interview Questions
-
-Q73. Explain what Flask is and its benefits?
-
-Q74. Is Django better than Flask?
-
-Q75. Mention the differences between Django, Pyramid and Flask.
-
-Q76. Discuss Django architecture.
-
-Q77. Explain how you can set up the Database in Django.
-
-Q78. Give an example how you can write a VIEW in Django?
-
-Q79. Mention what the Django templates consist of.
-
-Q80. Explain the use of session in Django framework?
-
-Q81.  List out the inheritance styles in Django.
+	object is an instance of class it is used to call the functions.
 
 
