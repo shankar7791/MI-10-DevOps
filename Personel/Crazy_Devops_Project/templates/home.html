@@ -4,11 +4,12 @@
 
 <style>
 
+type="text/css">
   .zoomin img {
     padding: 50px;
-    background-color: black;
+    background-color: green;
     transition: transform .2s; /* Animation */
-    width: 50px;
+    width: 200px;
     height: 200px;
     margin: 0 auto;
   }
@@ -28,7 +29,7 @@
  .navbar {
   width: 100%;
   background-color: #555;
-  overflow: auto;
+  overflow: auto;``
 }
 
 /* Navbar links */
@@ -67,8 +68,10 @@ img {vertical-align: middle;}
 /* Slideshow container */
 .slideshow-container {
   max-width: 2000px;
-  position: relative;
+  position: absolute;
+  
   margin: auto;
+
 }
 
 /* Fading animation */
@@ -94,9 +97,9 @@ img {vertical-align: middle;}
   .text {font-size: 15px}
 }
 
-} 
+}
 
-        </style>
+   </style>
       </head>
 
           <body>
@@ -106,33 +109,35 @@ img {vertical-align: middle;}
                 <div class="navbar">
                 <a class="active" href="Home"><i class="fa fa-fw fa-home"></i> HOME</a>
                 <a href="About"><i class="fa fa-fw fa-envelope"></i> ABOUT US</a>
+                <a href="KGF"><i class="fa fa-fw fa-bars"></i>MOVIES</a>
                 <a href="Login"><i class="fa fa-fw fa-user"></i> LOGOUT</a>
+                
                 </div> 
 
                 <div>
                     <h1><center>BOOK YOUR SHOW NOW </center></h1>
                 </div>
-
+                <div style="background: chocolate;"
                 <div class="slideshow-container">
 
                     <div class="mySlides fade">
                       
-                      <img src="/templates/Images/master.jpg" width="100%"  height="500" alt="MASTER " >
+                      <center><img  src="/templates/Images/master.jpg" width="1100"  height="400" alt="MASTER " ></center>
                     
                     </div>
                     
                     <div class="mySlides fade">
                      
-                      <img src="/templates/Images/endgame.jpg" style="width:100%" height="500">
+                      <center><img src="/templates/Images/endgame.jpg" style="width:1100" height="400"></center>
                       
                     </div>
                     
                     <div class="mySlides fade">
                      
-                      <img src="/templates/Images/Frozen.jpg" style="width:100%" height="500">
+                      <center><img src="/templates/Images/dracula.jpg" style="width:1100" height="400"></center>
                       
                     </div>
-                    
+                    </div>
                 </div>
                     <br>
 
