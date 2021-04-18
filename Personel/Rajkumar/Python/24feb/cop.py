@@ -1,0 +1,38 @@
+print("***Performing Comparison Operater***")
+print("1.Equal to Operater")
+print("2.Not Equal to Operater")
+print("3.Less than Equal to")
+print("4.Grather than Equal to ")
+print("5.Less than ")
+print("6.Grather than ")
+selection=int(input("Enter a Selecion"))
+if(selection==1):
+    print("You Select Equal to Operater")
+    a=int(input("Enter a First Number: "))
+    b=int(input("Enter b Second Number: "))
+    print("Equal Operater: ",a==b)
+elif(selection==2):
+    print("You Select Not Equal to Operater")
+    a=int(input("Enter a First Number: "))
+    b=int(input("Enter b Second Number: "))
+    print("Not equal: ",a!=b)
+elif(selection==3):
+    print("You Select less than and Equal to Operater")
+    a=int(input("Enter a First Number: "))
+    b=int(input("Enter b Second Number: "))
+    print("Less than equal to ",a<=b)
+elif(selection==4):
+    print("You Select Grather than and Equal to Operater")
+    a=int(input("Enter a First Number: "))
+    b=int(input("Enter b Second Number: "))
+    print("Grater than equal to: ",a>=b)
+elif(selection==5):
+    print("You Select First number is grather")
+    a=int(input("Enter a First Number: "))
+    b=int(input("Enter b Second Number: "))
+    print("First Grater: ",a>b)
+elif(selection==6):
+    print("You Select First number is Less")
+    a=int(input("Enter a First Number: "))
+    b=int(input("Enter b Second Number: "))
+    print("Secon Grater: ",a<b)
