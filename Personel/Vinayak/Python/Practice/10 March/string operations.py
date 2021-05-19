@@ -1,5 +1,4 @@
 str1=str(input("Enter any word:"))
-i=0
 print("Select any number from below operations to be performed on entered string\n"
 "1. Length of String\n"
 "2. Reverse String\n"
@@ -22,11 +21,14 @@ def sym(d):
     j=(len(d)//2)
     if(len(d)%2==0):
         for i in range((len(d))//2):
-            d[i]==d[j]
-            j+=1
-        print("Its Symmetrical")
+            if(d[i]==d[j]):
+                j+=1
+            else:
+                print("Not Symmetrical")
     else:
         print("Its not symmetrical")
+    if(j==len(d)):
+        print("Its Symmetrical")
 def percom(e):
     from itertools import permutations
     p=permutations(e)
