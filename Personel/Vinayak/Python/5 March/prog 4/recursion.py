@@ -11,4 +11,4 @@ def add(k):
     else:
         return 0
     return result
-print (add(n))
+print (add(5))
