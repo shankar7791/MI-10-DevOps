@@ -1,4 +1,4 @@
-
+# selection sort
 def selectionSort(array, size):
     for step in range(size):
         min_idx = step
