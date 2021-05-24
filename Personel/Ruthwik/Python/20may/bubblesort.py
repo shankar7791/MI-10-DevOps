@@ -3,23 +3,23 @@
 def bubbleSort(array):
     
   # loop to access each array element
-  for i in range(len(array)):
-
+    for i in range(len(array)):
+        
     # loop to compare array elements
-    for j in range(0, len(array) - i - 1):
-
+        for j in range(0, len(array) - i - 1):
+            print(data)
       # compare two adjacent elements
       # change > to < to sort in descending order
-      if array[j] > array[j + 1]:
+            if array[j] > array[j + 1]:
 
         # swapping elements if elements
         # are not in the intended order
-        temp = array[j]
-        array[j] = array[j+1]
-        array[j+1] = temp
+                temp = array[j]
+                array[j] = array[j+1]
+                array[j+1] = temp
+        
 
-
-data = [-2, 45, 0, 11, -9]
+data = [99, 22, 78, 6, 8, 98]
 
 bubbleSort(data)
 
