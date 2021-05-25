@@ -6,11 +6,9 @@ def pro(arr, n):
         print("No pairs exists")
         return
      
-    # Initialize max product pair
     a = arr[0]; b = arr[1]
  
-    # Traverse through every possible pair
-    # and keep track of max product
+    
     for i in range(0, n):
          
         for j in range(i + 1, n):
@@ -20,10 +18,6 @@ def pro(arr, n):
     print("Max product pair is {", a, ",", b, "}",
                                           sep = "")
      
-# Driver Code
-# arr = [1, 4, 3, 6, 7, 0]
-# n = len(arr)
-# pro(arr, n)
  
 N=int(input('enter number of elements in array')) #take the size
 
