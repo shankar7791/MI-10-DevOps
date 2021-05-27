@@ -17,15 +17,10 @@ class LinkedList:
         node=self.first
 
         print ("\nPrinting the list...\n")
-
-        llist=[ ]
-        while node!=None:
-            llist.append(node.data)
-            node=node.next
-        if llist :
-            print ("\nLinked List  :\n", llist)
-        else:
-            print ("\nList is empty !! \n")
+        
+        while (node):
+            print(node.data)
+            node = node.next
 
     def add(self, data):
         new_node =Node(data)
