@@ -55,6 +55,11 @@ def merge_Sort(a,b):
     
     return sorted_list
 
+#InsertionSort
+def insertionSort():
+    pass
+
+
 
 #BinarySearch
 def binarySearch(a,n):
