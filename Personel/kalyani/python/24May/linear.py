@@ -13,3 +13,4 @@ for i in range(size):
     arr.append(val)
 size=int(input(" Enter the value to search:"))
 linear_search(arr,size)3
+
