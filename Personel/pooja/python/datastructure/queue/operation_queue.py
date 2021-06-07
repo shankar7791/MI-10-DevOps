@@ -1,4 +1,5 @@
 # Implement Queue using List(Functions)
+# for self
 q=[]
 def Enqueue():
     if len(q)==size:

@@ -1,5 +1,6 @@
 #stack implementation in python
 
+
 #creating stack 
 def create_stack():
     stack=[]
