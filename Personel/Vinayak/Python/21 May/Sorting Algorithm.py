@@ -56,8 +56,9 @@ def merge_Sort(a,b):
     return sorted_list
 
 #InsertionSort
-def insertionSort():
-    pass
+def insertionSort(list1):
+    for i in range(len(list)):
+        pass
 
 
 
