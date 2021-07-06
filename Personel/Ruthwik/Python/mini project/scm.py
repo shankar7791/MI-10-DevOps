@@ -1,14 +1,16 @@
 class Node:
     
-    def __init__(self,id,name,batch):
+    def __init__(self,id,name,batch,department,address):
         self.id = id
         self.name = name
         self.batch = batch
+        self.department = department
+        self.address = address
         self.next = None
         self.prev = None
 
     def __repr__(self):
-        value = '{%d %s %s}' % (self.id, self.name, self.batch) 
+        value = '{%d %s %s %s %s}' % (self.id, self.name, self.batch, self.department, self.address) 
         return value
 
 class d_linkedlist:
@@ -51,6 +53,19 @@ class d_linkedlist:
             res[i] = line 
         print(res)
 
+#=============================================== Display in Table Function ======================================
+    def tdisplay(self):
+         with open('scm.txt', 'r') as fd:
+            f=[]
+            print("{:<8} {:<8} {:<10} {:10} {:15}".format('id', 'name', 'batch', 'department', 'address'))
+            for line in fd.readlines():
+                f= line.split()
+                id = f[0]
+                name = f[1]
+                batch = f[2]
+                department = f[3]
+                address = f[4]
+                print("{:<8} {:<8} {:<10} {:10} {:15}".format(id, name, batch, department, address))
 #=============================================== Deleting Data Function ======================================
 
     def delete(self, id) :
@@ -98,6 +113,8 @@ class d_linkedlist:
             if node.id == newnode.id:
                 node.name = newnode.name
                 node.batch = newnode.batch
+                node.department = newnode.department
+                node.address = newnode.address
                 break
             node = node.next
         else:
@@ -106,7 +123,7 @@ class d_linkedlist:
 #=============================================== Write Function ===================================================
     def writef(self,newnode):
         with open('scm.txt','a+') as fd:
-            fd.writelines( str(newnode.id) +' '+ newnode.name +' '+ newnode.batch +"\n")
+            fd.writelines( str(newnode.id) +' '+ newnode.name +' '+ newnode.batch +' '+ newnode.department +' '+ newnode.address +"\n")
 
 #=============================================== Read Function ===================================================
     def readf(self):
@@ -117,7 +134,9 @@ class d_linkedlist:
                 id = f[0]
                 name = f[1]
                 batch = f[2]
-                newnode = Node(int(id), name, batch)
+                department = f[3]
+                address = f[4]
+                newnode = Node(int(id), name, batch, department, address)
                 T.insert(newnode)
 
 #=============================================== Delete file data ===================================================
@@ -139,7 +158,7 @@ class d_linkedlist:
                 if str(newnode.id) not in line:
                     fd.write(line)
                 else:
-                    fd.write( str(newnode.id) +' '+ newnode.name +' '+ newnode.batch +'\n')
+                    fd.write( str(newnode.id) +' '+ newnode.name +' '+ newnode.batch +' '+ newnode.department +' '+ newnode.address +'\n')
             fd.truncate()
 
 #=============================================== Menu List ===================================================
@@ -166,8 +185,10 @@ while(True):
         for counter in range(1,length+1) :
             id = int(input("Enter your id : "))
             name = input("Enter your name : ")
-            batch = input("Enter youe Batch name / no : ")
-            newnode = Node(id,name,batch)
+            batch = input("Enter your Batch name / no : ")
+            dept = input('Enter your Department : ')
+            address = input('Enter your Address : ')
+            newnode = Node(id,name,batch,dept,address)
             sid = T.search(id)
             if str(id) in str(sid):
                 print(sid)
@@ -180,7 +201,21 @@ while(True):
         
 
     elif ch == 2:
-        T.display()
+        while True:
+            print("""
+=================== Display Menu ===================
+1. Display as List.
+2. Display as Table.
+3. Return to Main Menu.
+----------------------------------------------------
+""")
+            sch = int(input('Enter your Choice : '))
+            if sch == 1:
+                T.display()
+            elif sch == 2:
+                T.tdisplay()
+            else:
+                break
 
     elif ch == 3:
         id = int(input("Enter the ID : "))
@@ -190,7 +225,9 @@ while(True):
         id = int(input("Enter your id : "))
         name = input("Enter the new name : ")
         batch = input("Enter new batch name / no : ")
-        newnode=Node(id,name,batch)
+        dept = input('Enter your Department : ')
+        address = input('Enter your Address : ')
+        newnode=Node(id,name,batch,dept,address)
         sid = T.search(id)
         if str(id) not in str(sid):
             print("ID not present!!!")
@@ -215,3 +252,6 @@ while(True):
     else: 
         print("Invalid choice") 
     
+
+
+    # department and address, display in table, id auto increment
