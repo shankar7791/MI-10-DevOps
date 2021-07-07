@@ -58,6 +58,7 @@ class d_linkedlist:
          with open('scm.txt', 'r') as fd:
             f=[]
             print("{:<8} {:<8} {:<10} {:10} {:15}".format('id', 'name', 'batch', 'department', 'address'))
+            print("----------------------------------------------------")
             for line in fd.readlines():
                 f= line.split()
                 id = f[0]
@@ -161,6 +162,21 @@ class d_linkedlist:
                     fd.write( str(newnode.id) +' '+ newnode.name +' '+ newnode.batch +' '+ newnode.department +' '+ newnode.address +'\n')
             fd.truncate()
 
+#=============================================== ID Counter Function ===================================================
+    def idc(self):
+        with open('scm.txt', 'r') as fd:
+                lines= fd.read().splitlines()
+                last_line = lines[-1]
+                ls = last_line.split()
+                str1 = ""
+                res1 = []
+                c=1
+                for i in ls:
+                    if i.isdigit():
+                        res1.append(str(int(i) + c))
+                for ele in res1:
+                    str1 += ele
+                return int(str1) 
 #=============================================== Menu List ===================================================
 
 
@@ -183,12 +199,12 @@ while(True):
     if ch == 1:
         length = int(input("Enter the number of nodes you want for your Linked List  : \n"))
         for counter in range(1,length+1) :
-            id = int(input("Enter your id : "))
-            name = input("Enter your name : ")
-            batch = input("Enter your Batch name / no : ")
+            id = T.idc()
+            name = input("Enter your Name : ")
+            batch = input("Enter your Batch : ")
             dept = input('Enter your Department : ')
-            address = input('Enter your Address : ')
-            newnode = Node(id,name,batch,dept,address)
+            address = input('Enter your City : ')
+            newnode = Node(int(id),name,batch,dept,address)
             sid = T.search(id)
             if str(id) in str(sid):
                 print(sid)
@@ -207,6 +223,7 @@ while(True):
 1. Display as List.
 2. Display as Table.
 3. Return to Main Menu.
+4. Exit.
 ----------------------------------------------------
 """)
             sch = int(input('Enter your Choice : '))
@@ -214,19 +231,23 @@ while(True):
                 T.display()
             elif sch == 2:
                 T.tdisplay()
-            else:
+            elif sch == 3:
                 break
+            elif sch == 4:
+                exit()
+            else:
+                print("Invalid Choice!!!")
 
     elif ch == 3:
         id = int(input("Enter the ID : "))
         print(T.search(id))
 
     elif ch == 4:
-        id = int(input("Enter your id : "))
-        name = input("Enter the new name : ")
-        batch = input("Enter new batch name / no : ")
+        id = int(input("Enter your ID : "))
+        name = input("Enter the New Name : ")
+        batch = input("Enter new Batch : ")
         dept = input('Enter your Department : ')
-        address = input('Enter your Address : ')
+        address = input('Enter your City : ')
         newnode=Node(id,name,batch,dept,address)
         sid = T.search(id)
         if str(id) not in str(sid):
