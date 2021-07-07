@@ -199,22 +199,43 @@ while(True):
     if ch == 1:
         length = int(input("Enter the number of nodes you want for your Linked List  : \n"))
         for counter in range(1,length+1) :
-            id = T.idc()
-            name = input("Enter your Name : ")
-            batch = input("Enter your Batch : ")
-            dept = input('Enter your Department : ')
-            address = input('Enter your City : ')
-            newnode = Node(int(id),name,batch,dept,address)
-            sid = T.search(id)
-            if str(id) in str(sid):
-                print(sid)
-                print("ID already present!!")
-            else:
-                T.insert(newnode) #======================> Insert Data
-                T.writef(newnode) #======================> Write Data
-                print("Data Added Successfully :)")
-                T.display()
-        
+            while True:
+                print("""
+=================== Display Menu ===================
+1. Create ID automatically.
+2. Create ID Manually.
+3. Return to Main Menu.
+4. Exit.
+----------------------------------------------------
+""")
+                sch = int(input('Enter the Choice : '))
+                if sch == 1:
+                    id = T.idc()
+                    name = input("Enter your Name : ")
+                    batch = input("Enter your Batch : ")
+                    dept = input('Enter your Department : ')
+                    address = input('Enter your City : ')
+                elif sch == 2:
+                    id = int(input('Enter your ID :'))
+                    name = input("Enter your Name : ")
+                    batch = input("Enter your Batch : ")
+                    dept = input('Enter your Department : ')
+                    address = input('Enter your City : ')
+                elif sch == 3:
+                    break
+                elif sch == 4:
+                    exit()
+                newnode = Node(int(id),name,batch,dept,address)
+                sid = T.search(id)
+                if str(id) in str(sid):
+                    print(sid)
+                    print("ID already present!!")
+                else:
+                    T.insert(newnode) #======================> Insert Data
+                    T.writef(newnode) #======================> Write Data
+                    print("Data Added Successfully :)")
+                    T.display()
+            
 
     elif ch == 2:
         while True:
