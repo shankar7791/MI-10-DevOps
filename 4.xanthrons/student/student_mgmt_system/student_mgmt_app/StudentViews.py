@@ -14,6 +14,8 @@ def student_home(request):
     total_attendance = AttendanceReport.objects.filter(student_id=student_obj).count()
     attendance_present = AttendanceReport.objects.filter(student_id=student_obj, status=True).count()
     attendance_absent = AttendanceReport.objects.filter(student_id=student_obj, status=False).count()
+    attendance_present_percent = (attendance_present/total_attendance) * 100
+    attendance_absent_percent = (attendance_absent / total_attendance) * 100
 
     course_obj = Courses.objects.get(id=student_obj.course_id.id)
     total_subjects = Subjects.objects.filter(course_id=course_obj).count()
@@ -39,7 +41,9 @@ def student_home(request):
         "total_subjects": total_subjects,
         "subject_name": subject_name,
         "data_present": data_present,
-        "data_absent": data_absent
+        "data_absent": data_absent,
+        "present_percent": attendance_present_percent,
+        "absent_percent": attendance_absent_percent
     }
     return render(request, "student_template/student_home_template.html", context)
 
@@ -162,6 +166,17 @@ def student_profile(request):
     return render(request, 'student_template/student_profile.html', context)
 
 
+def student_m(request):
+    user = CustomUser.objects.get(id=request.user.id)
+    student = Students.objects.get(admin=user)
+
+    context = {
+        "user": user,
+        "student": student
+    }
+    return render(request, 'student_template/manage_student_template.html', context)
+
+
 def student_profile_update(request):
     if request.method != "POST":
         messages.error(request, "Invalid Method!")
@@ -185,21 +200,17 @@ def student_profile_update(request):
             student.save()
 
             messages.success(request, "Profile Updated Successfully")
-            return redirect('student_profile')
+            return redirect('student_m')
         except:
             messages.error(request, "Failed to Update Profile")
             return redirect('student_profile')
 
 
-# def student_view_result(request):
-#     student = Students.objects.get(admin=request.user.id)
-#     student_result = StudentResult.objects.filter(student_id=student.id)
-#     context = {
-#         "student_result": student_result,
-#     }
-#     return render(request, "student_template/student_view_result.html", context)
-#
-#
-
-
+def student_view_result(request):
+    student = Students.objects.get(admin=request.user.id)
+    student_result = StudentResult.objects.filter(student_id=student.id)
+    context = {
+        "student_result": student_result,
+    }
+    return render(request, "student_template/student_view_result.html", context)
 

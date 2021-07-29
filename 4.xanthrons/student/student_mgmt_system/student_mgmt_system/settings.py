@@ -128,3 +128,4 @@ USE_TZ = True
 STATIC_URL = '/static/'
 AUTH_USER_MODEL = "student_mgmt_app.CustomUser"
 AUTHENTICATION_BACKENDS = ['student_mgmt_app.EmailBackEnd.EmailBackEnd']
+

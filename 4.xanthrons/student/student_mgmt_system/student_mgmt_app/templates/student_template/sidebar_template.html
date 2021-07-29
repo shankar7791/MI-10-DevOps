@@ -16,7 +16,7 @@
             <img src="{% static 'dist/img/user2-160x160.jpg' %}" class="img-circle elevation-2" alt="User Image">
           </div>
           <div class="info">
-            <a href="{% url 'student_profile' %}" class="d-block">{{ user.first_name }} {{ user.last_name }}</a>
+            <a href="{% url 'student_m' %}" class="d-block">{{ user.first_name }} {{ user.last_name }}</a>
           </div>
         </div>
 
@@ -48,16 +48,16 @@
               </a>
             </li>
 
-{#            <li class="nav-item">#}
-{#              {% url 'student_view_result' as student_view_result %}#}
-{#              <a href="{{ student_view_result }}" class="nav-link {% if request.path == student_view_result %} active {% endif %}">#}
-{#                <i class="nav-icon fas fa-tasks"></i>#}
-{#                <p>#}
-{#                  View Result#}
-{#                  {% comment %} <span class="right badge badge-danger">New</span> {% endcomment %}#}
-{#                </p>#}
-{#              </a>#}
-{#            </li>#}
+            <li class="nav-item">
+              {% url 'student_view_result' as student_view_result %}
+              <a href="{{ student_view_result }}" class="nav-link {% if request.path == student_view_result %} active {% endif %}">
+                <i class="nav-icon fas fa-tasks"></i>
+                <p>
+                  View Result
+                  {% comment %} <span class="right badge badge-danger">New</span> {% endcomment %}
+                </p>
+              </a>
+            </li>
 
             <li class="nav-item">
               {% url 'student_apply_leave' as student_apply_leave %}
