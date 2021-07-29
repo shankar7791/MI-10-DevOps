@@ -15,14 +15,24 @@ Including another URLconf
 """
 from django.conf.urls.static import static
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 
 from student_mgmt_app import views, HodViews, StaffViews, StudentViews
 from student_mgmt_system import settings
 
 urlpatterns = [
+                  # URLs for Registration
+                  path('signup_admin', views.signup_admin, name="signup_admin"),
+                  path('signup_staff', views.signup_staff, name="signup_staff"),
+                  path('signup_student', views.signup_student, name="signup_student"),
+                  path('do_admin_signup', views.do_admin_signup, name="do_admin_signup"),
+                  path('do_student_signup', views.do_student_signup, name="do_student_signup"),
+                  path('do_staff_signup', views.do_staff_signup, name="do_staff_signup"),
+
+                  # URLs for HOD
                   path('demo', views.showDemoPage),
                   path('admin/', admin.site.urls),
+                  path('accounts/', include('django.contrib.auth.urls')),
                   path('', views.ShowLoginPage, name="show_login"),
                   path('get_user_details', views.GetUserDetails),
                   path('logout_user/', views.logout_user, name="logout"),
@@ -89,12 +99,15 @@ urlpatterns = [
                   path('get_attendance_dates/', StaffViews.get_attendance_dates, name="get_attendance_dates"),
                   path('get_attendance_student/', StaffViews.get_attendance_student, name="get_attendance_student"),
                   path('update_attendance_data/', StaffViews.update_attendance_data, name="update_attendance_data"),
+                  path('staff_add_result/', StaffViews.staff_add_result, name="staff_add_result"),
+                  path('staff_add_result_save/', StaffViews.staff_add_result_save, name="staff_add_result_save"),
                   path('staff_apply_leave/', StaffViews.staff_apply_leave, name="staff_apply_leave"),
                   path('staff_apply_leave_save/', StaffViews.staff_apply_leave_save, name="staff_apply_leave_save"),
                   path('staff_feedback/', StaffViews.staff_feedback, name="staff_feedback"),
                   path('staff_feedback_save/', StaffViews.staff_feedback_save, name="staff_feedback_save"),
                   path('staff_profile/', StaffViews.staff_profile, name="staff_profile"),
                   path('staff_profile_update/', StaffViews.staff_profile_update, name="staff_profile_update"),
+                  path('staff_profile_template/', StaffViews.staff_profile_temp, name="staff_profile_template"),
 
                   # URLS for Student
                   path('student_home', StudentViews.student_home, name="student_home"),
@@ -109,6 +122,8 @@ urlpatterns = [
                   path('student_feedback_save/', StudentViews.student_feedback_save, name="student_feedback_save"),
                   path('student_profile/', StudentViews.student_profile, name="student_profile"),
                   path('student_profile_update/', StudentViews.student_profile_update, name="student_profile_update"),
+                  path('student_m/', StudentViews.student_m, name="student_m"),
+                  path('student_view_result/', StudentViews.student_view_result, name="student_view_result"),
 
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + static(settings.STATIC_URL,
                                                                                          document_root=settings.STATIC_ROOT)

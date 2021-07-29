@@ -131,12 +131,13 @@
            //Code for Pie Chart
             var pieData        = {
             labels: [
-                'ABSENT',
-                'PRESENT',
+                'ABSENT %',
+                'PRESENT %',
+
             ],
             datasets: [
                 {
-                data: [{{ attendance_absent }}, {{ attendance_present }}],
+                data: [{{ absent_percent }}, {{ present_percent }}],
                 backgroundColor : ['#f56954', '#00a65a'],
                 }
             ]

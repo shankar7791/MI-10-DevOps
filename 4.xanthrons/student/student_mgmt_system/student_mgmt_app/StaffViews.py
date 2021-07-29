@@ -1,6 +1,7 @@
+from django.contrib import messages
 from django.shortcuts import render, redirect
 from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
-from django.contrib import messages
+
 from django.core.files.storage import FileSystemStorage  # To upload Profile Picture
 from django.urls import reverse
 from django.views.decorators.csrf import csrf_exempt
@@ -279,6 +280,16 @@ def staff_profile(request):
         "staff": staff
     }
     return render(request, 'staff_template/staff_profile.html', context)
+
+def staff_profile_temp(request):
+    user = CustomUser.objects.get(id=request.user.id)
+    staff = Staffs.objects.get(admin=user)
+
+    context = {
+        "user": user,
+        "staff": staff
+    }
+    return render(request, 'staff_template/staff_profile_template.html', context)
 
 
 def staff_profile_update(request):
