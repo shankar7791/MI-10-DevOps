@@ -1,0 +1,126 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>{{student.first_name}}{{student.last_name}}  Details</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" tye="text/css" href= "{% static 'css/bootstrap.min.css' %}">
+    </head>
+    <body>
+    {% if user.is_authenticated %}
+        <nav class="navbar navbar-inverse">
+
+            <div class="container-fluid">
+                <div class="nav-bar-header">
+                    <div class ="navbar-brand">Hi,{{request.user.username}} </div>
+                    <ul class="nav navbar-nav navbar-right">
+                            <li><a href="/"><i class="glyphicon glyphicon-home"></i>Home</a></li>
+                            <li><a href="/"><i class="glyphicon glyphicon-log-out"></i>Log out</a></li>
+                            
+                    </ul>
+                    </div>
+                </div> 
+            </div>
+        </nav>
+        
+            
+            <h3 class ="text-danger text-center">Student Profile </h3>
+        
+            <div class="jumbotron container-fluid row">
+            
+                
+               
+                    <form action="" method="post">
+                        {% csrf_token %}                   
+                                <div class="col-md-4">   </div>
+                                <div class="col-md-3">
+                                    <div class="text-center">
+                                        <a href="/update/{{student.id}}"><i class="glyphicon glyphicon-hand-right"></i> Update</a>&nbsp;
+                                        
+                                        {% if student.image %}
+                                            <span class="border border-primary">
+
+                                            <img class="img-fluid img-circle border " src="{{student.image.url}}" alt="image" width="100" height="100">
+                                                    
+                                            </span>
+                                            {% else %}
+                                            <img class="img-fluid img-circle border " src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png" alt="image" width="100" height="100">
+                                            {% endif %}
+                                            &nbsp;<a href="/delete/{{student.id}}">delete<i class="glyphicon glyphicon-remove-circle"></i></a>
+                                           
+                                        <br>
+                                    </div>
+                                    &nbsp;
+                                    <table class="table table-bordered">
+                                        <tr>
+                                            <th><span class="text-danger">First Name : </span></th>
+                                            <td>{{student.first_name}}</td>
+                                        </tr>
+                                        <tr>
+                                            <th><span class="text-danger">Last Name : </span></th>
+                                            <td>{{student.last_name}}</td>
+                                        </tr>
+                                        <tr>
+                                            <th><span class="text-danger">Date Of Birth : </span></th>
+                                            <td>{{student.DOB}}</td>
+                                        </tr>
+                                        <tr>
+                                            <th><span class="text-danger">Grade : </span></th>
+                                            <td>{{student.grade}}</td>
+                                        </tr>
+                                        <tr>
+                                            <th><span class="text-danger">Gender : </span></th>
+                                            <td>{{student.gender}}</td>
+                                        </tr>
+                                        <tr>
+                                            <th><span class="text-danger">Email : </span></th>
+                                            <td>{{student.email}}</td>
+                                        </tr>
+                                        <tr>
+                                            <th><span class="text-danger">Phone No : </span></th>
+                                            <td>{{student.phone_no}}</td>
+                                        </tr>
+                                        <tr>
+                                            <th><span class="text-danger">Address : </span></th>
+                                            <td>{{student.address}}</td>
+                                        </tr>
+                                    </table>
+                                
+                                </div>
+                                </form>
+                                <div class="col-md-12 "> 
+                                    
+                                    <div class="text-right text-down">
+                                        <a href="/students/">
+                                        <button class="btn btn-warning "> Student List</button>
+                                        </a>
+                                    </div>
+                                </div>
+                           
+                        
+                        
+                    </div>
+                </div>
+            </div>
+                        
+ 
+        
+        <script src="static/js/jquery.min.js" ></script>
+        <script src="static/js/bootstrap.min.js" ></script>
+    {% else %}
+    
+    <div class="container ">
+        <br>
+        <br>
+        <p class="bg-danger text-center"><i> Hii, You need to Login to acces these page </i></p>
+        <a class="btn btn-warning text-center" href="/login/" type="button"></i> Log in</a>
+    </div>
+    
+    {% endif %}
+    </body>
+</html>

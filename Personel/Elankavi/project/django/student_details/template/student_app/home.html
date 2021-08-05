@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Home page </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+
+            <div class="container-fluid">
+                <div class="nav-bar-header">
+                    <h3 class ="navbar-brand">Hi,{{request.user.username}} </h3>
+                    <ul class="nav navbar-nav navbar-right">
+                            <li><a href="/login/"><i class="glyphicon glyphicon-log-in"></i> Log in</a></li>
+                            <li><a href="/logout/"><i class="glyphicon glyphicon-log-out "></i> log out</a></li>
+                    </ul>
+                    
+                    
+                </div> 
+            </div>
+        </nav>
+        <div class="container">
+        <h1><marquee bgcolor="#F0FFFF" class="text-success" behavior="" direction="" scrollamount="5" height="50px">
+            Welcome To  Student Management System
+        </marquee></h1>
+        <div class="text-center">
+            <img class="rounded" src="https://www.kindpng.com/picc/m/227-2271076_student-management-system-symbol-hd-png-download.png" height="250px" alt="image">
+          
+        </div>
+</div>
+        
+        <br>
+        </div>
+        
+            <div class="col-md-12">
+                <div class="text-down text-center">
+                    
+                        
+                    <a href = '/students/'><input class="btn btn-primary"  type='button' value='Students List'></a>
+                    <a href = '/add/'><input class="btn btn-success"  type='button' value='Add Student details'></a>
+                            
+                
+                    
+                </div>
+            </div>
+        </div>
+        
+        <script src="static/quiz_app/js/jquery.min.js" ></script>
+        <script src="static/quiz_app/js/bootstrap.min.js" ></script>
+    </body>
+</html> 

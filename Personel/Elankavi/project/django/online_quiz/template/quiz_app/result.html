@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Result</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" 
+    </head>
+    <body>
+    <nav class="navbar navbar-inverse">
+
+        <div class="container-fluid">
+            <div class="nav-bar-header">
+            <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/"><i class="glyphicon glyphicon-home"></i> Home</a></li>
+                    <li><a href="/logout/"><i class="glyphicon glyphicon-log-out "></i> log out</a></li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+                    
+        <div class="container ">
+            <h2><marquee bgcolor="#F0FFFF" class="text-success" behavior="" direction="" scrollamount="5">
+                Your Result
+            </marquee></h2>
+                <img class="card-img-top" src="http://kmit.in/emagazine/wp-content/uploads/2018/02/karnataka-results.jpg" alt="Card image cap">
+                    
+                    <table class="table table-bordered">
+                        <tr>
+                            <th> Score </th>
+                            <th> Percentage </th>
+                            <th> Time Taken </th>
+                            <th> Correct Answer </th>
+                            <th> Incorrect Answer </th>
+                            <th>Total Questions</th>
+                        </tr>
+                        <tr>
+                            <td> {{score}}</td>
+                            <td> {{percent}}</td>
+                            <td> {{time}}</td>
+                            <td>{{correct}}</td>
+                            <td> {{wrong}}</td>
+                            <td>{{total}}</td>
+
+                        </tr>
+                    </table>
+                    <h2 class="bg-info text-danger">All the best for next quiz !</h2>
+                            
+                        
+                    
+                
+            
+        </div>
+            
+            <script src="js/jquery.min.js" ></script>
+            <script src="js/bootstrap.min.js" ></script>
+    </body>
+</html>
