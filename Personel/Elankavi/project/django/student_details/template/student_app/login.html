@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" >
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+
+            <div class="container-fluid">
+                <div class="nav-bar-header">
+                    <h3 class ="navbar-brand">Hi,{{request.user.username}} </h3>
+                    <ul class="nav navbar-nav navbar-right">
+                            <li><a href="/"><i class="glyphicon glyphicon-home"></i>Home</a></li>
+                            
+                    </ul>
+                
+                </div>
+            </div> 
+        </div>
+    </nav>
+    
+       
+    
+        
+            <h1 class="text-danger text-lg text-center"> Welcome !.</h1><hr>
+            <div class="container-fluid  text-center">
+            
+                
+                <form action="" method="POST">
+                    {{form.as_p}}
+                    {% csrf_token %}
+                    <br>
+                    <button class="btn btn-primary" type="submit" id="button"> Login </button> &nbsp;
+                    <a href = "/register/"><button class="btn btn-primary" type="button" id="button" >Signup </button></a>
+                
+                </form>
+            </div>
+        
+    </body>
+    
+</html>

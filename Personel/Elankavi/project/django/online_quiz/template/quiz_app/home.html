@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Home page </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="static/quiz_app/css/bootstrap.min.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+
+            <div class="container-fluid">
+                <div class="nav-bar-header">
+                    <h3 class ="navbar-brand">Hi,{{request.user.username}} </h3>
+                    
+                    <ul class="nav navbar-nav navbar-right">
+                            <li><a href="/login/"><i class="glyphicon glyphicon-log-in"></i> Log in</a></li>
+                            <li><a href="/logout/"><i class="glyphicon glyphicon-log-out "></i> log out</a></li>
+                        </ul>
+                    
+                    </div>
+                </div> 
+            </div>
+        </nav>
+        <div class="container">
+        <h1><marquee class="text-success"bgcolor="#F0FFFF" behavior="" direction="" scrollamount="5" >
+            Welcome To The Quiz
+        </marquee></h1>
+        <div class="btn-group text-left">
+            <button class="btn btn-primary"> Quiz.. </button>
+                    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                      <span class="caret"></span>
+
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href = '/linux/'>Linux</a></li>
+                <li><a href = '/python/'>Python</a></li>
+                <li><a href = '/git/'>Git</a></li>
+            </ul>
+        </div>
+        <div class="text-right">
+                <div class="btn-group">
+                    {% if request.user.is_staff %}  
+                    <button class="btn btn-primary"> Add Question </button>
+                    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                      <span class="caret"></span>
+
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="/AddQuestionPython/"> Python </a></li>
+                        <li><a href="/AddQuestionGit/"> Git </a></li>
+                        <li><a href="/AddQuestionLinux/"> Linux </a></li>
+                        
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    &nbsp;
+                    <button class="btn btn-primary"> Delete </button>
+                    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                      <span class="caret"></span>
+
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="/pythonQuestion/"> Python </a></li>
+                        <li><a href="/gitQuestion/"> Git </a></li>
+                        <li><a href="/linuxQuestion/"> Linux </a></li>
+                        
+                    </ul>
+                    
+                            
+
+                    {% endif %} 
+                </div>
+        </div>
+        <img src="https://t4.ftcdn.net/jpg/02/87/36/23/360_F_287362356_P2aOUyD53mZHwDFIIOzBAagiaQTgl6q0.jpg" alt="Quiz">
+        
+            <br>
+                    
+                </div>
+            
+        
+        <script src="static/quiz_app/js/jquery.min.js" ></script>
+        <script src="static/quiz_app/js/bootstrap.min.js" ></script>
+    </body>
+</html>
