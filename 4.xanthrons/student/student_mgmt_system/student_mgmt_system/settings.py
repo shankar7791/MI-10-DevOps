@@ -24,7 +24,7 @@ SECRET_KEY = ')s_*-6b5kvgcliu+jn+vri2pz357snpp!dcfsy9^-vm+jn!f%h'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["studentmgmtsystem.herokuapp.com"]
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
@@ -45,6 +45,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -80,14 +81,14 @@ WSGI_APPLICATION = 'student_mgmt_system.wsgi.application'
 
 DATABASES = {
     'default': {
-        # 'ENGINE': 'django.db.backends.sqlite3',
-        # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'student_mgmt',
-        'USER': 'student_mgmt',
-        'PASSWORD': '2352786',
-        'HOST': 'localhost',
-        'PORT': '8000'
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        # 'ENGINE': 'django.db.backends.mysql',
+        # 'NAME': 'student_mgmt',
+        # 'USER': 'student_mgmt',
+        # 'PASSWORD': '2352786',
+        # 'HOST': 'localhost',
+        # 'PORT': '8000'
     }
 }
 
@@ -129,3 +130,7 @@ STATIC_URL = '/static/'
 AUTH_USER_MODEL = "student_mgmt_app.CustomUser"
 AUTHENTICATION_BACKENDS = ['student_mgmt_app.EmailBackEnd.EmailBackEnd']
 
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+import dj_database_url
+prod_db=dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(prod_db)

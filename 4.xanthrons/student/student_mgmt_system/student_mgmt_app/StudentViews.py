@@ -14,8 +14,8 @@ def student_home(request):
     total_attendance = AttendanceReport.objects.filter(student_id=student_obj).count()
     attendance_present = AttendanceReport.objects.filter(student_id=student_obj, status=True).count()
     attendance_absent = AttendanceReport.objects.filter(student_id=student_obj, status=False).count()
-    attendance_present_percent = (attendance_present/total_attendance) * 100
-    attendance_absent_percent = (attendance_absent / total_attendance) * 100
+    # attendance_present_percent = (attendance_present/total_attendance) * 100
+    # attendance_absent_percent = (attendance_absent / total_attendance) * 100
 
     course_obj = Courses.objects.get(id=student_obj.course_id.id)
     total_subjects = Subjects.objects.filter(course_id=course_obj).count()
@@ -42,8 +42,8 @@ def student_home(request):
         "subject_name": subject_name,
         "data_present": data_present,
         "data_absent": data_absent,
-        "present_percent": attendance_present_percent,
-        "absent_percent": attendance_absent_percent
+        # "present_percent": attendance_present_percent,
+        # "absent_percent": attendance_absent_percent
     }
     return render(request, "student_template/student_home_template.html", context)
 
