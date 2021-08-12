@@ -8,6 +8,7 @@ class LinkedList:
         self.head = None
         self.last_node = None
  
+ 
     def append(self, data):
         if self.last_node is None:
             self.head = Node(data)

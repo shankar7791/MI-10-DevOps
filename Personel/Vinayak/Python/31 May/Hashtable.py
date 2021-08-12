@@ -11,7 +11,7 @@ def display(hashtable):
     for i in range(len(hashtable)):
         print(i , end = "")
         for j in hashtable[i]:
-            print("------> " , end ="")
+            print("------> " , end ="") 
             print(j , end = "")
         print()
 
