@@ -122,7 +122,7 @@ fname_entry.grid(row = 8, column = 1, padx = 2, pady = 6)
 def fetch_data() :
     conn = pymysql.connect(host = "localhost", user = "root", password = "", database = "studentmanagementsys")
     curr = conn.cursor()
-    curr.execute("SELECT * FROM student_data")
+    curr.execute("SELECT * FROM student_data1")
     rows = curr.fetchall()
     if len(rows)!= 0 :
         stud_table.delete(*stud_table.get_children())
@@ -140,7 +140,7 @@ def add_func() :
     else :
         conn = pymysql.connect(host = "localhost", user = "root", password = "", database = "studentmanagementsys")
         curr = conn.cursor()
-        curr.execute("INSERT INTO student_data VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s)", (name.get(),rollno.get(), section.get(), class_.get(), fathersname.get(), Gender.get(), dob.get(), contact.get(), address.get()))
+        curr.execute("INSERT INTO student_data1 VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s)", (name.get(),rollno.get(), section.get(), class_.get(), fathersname.get(), Gender.get(), dob.get(), contact.get(), address.get()))
         conn.commit()
         conn.close()
 
@@ -181,7 +181,7 @@ def clear() :
 def update_func() :
     conn = pymysql.connect(host = "localhost", user = "root", password = "", database = "studentmanagementsys")
     curr = conn.cursor()
-    curr.execute("update student_data set name = %s, section = %s, class_ = %s, fathersname = %s, Gender = %s, dob = %s, contact = %s, address = %s where rollno = %s", (name.get(), section.get(), class_.get(), fathersname.get(), Gender.get(), dob.get(), contact.get(), address.get(), rollno.get()))
+    curr.execute("update student_data1 set name = %s, section = %s, class_ = %s, fathersname = %s, Gender = %s, dob = %s, contact = %s, address = %s where rollno = %s", (name.get(), section.get(), class_.get(), fathersname.get(), Gender.get(), dob.get(), contact.get(), address.get(), rollno.get()))
     conn.commit()
     fetch_data()
     clear()
@@ -192,7 +192,7 @@ def update_func() :
 def delete() :
     conn = pymysql.connect(host = "localhost", user = "root", password = "", database = "studentmanagementsys")
     curr = conn.cursor()
-    curr.execute("delete from student_data where rollno = %s", rollno.get())
+    curr.execute("delete from student_data1 where rollno = %s", rollno.get())
     conn.commit()
     conn.close()
     fetch_data()
@@ -203,7 +203,7 @@ def delete() :
 def search() :
     conn = pymysql.connect(host = "localhost", user = "root", password = "", database = "studentmanagementsys")
     curr = conn.cursor()
-    curr.execute("select * from student_data where " + str(search_by.get()) + " Like '%" + str(search_txt.get()) + "%'")
+    curr.execute("select * from student_data1 where " + str(search_by.get()) + " Like '%" + str(search_txt.get()) + "%'")
     rows = curr.fetchall()
     if len(rows)!= 0 :
         stud_table.delete(*stud_table.get_children())
